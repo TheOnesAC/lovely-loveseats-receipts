@@ -1,27 +1,38 @@
-Here’s a simple README you can use for your repository:
+lovely_loveseat_description = "Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white."
+print(lovely_loveseat_description)
 
-```markdown
-# Lovely Loveseats Receipts
+lovely_loveseat_price = 254.00
+print(lovely_loveseat_price)
+# Define the variable and assign the string description to it
+stylish_settee_description = "Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black"
+# Print the variable to confirm the assignment
+print(stylish_settee_description)
 
-This project is a simple Python program for a fictional furniture store, **Lovely Loveseats for Neat Suites on Fleet Street**. It tracks item descriptions, prices, and generates customer receipts with sales tax calculations.
+luxurious_lamp_description = "Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade."
+print(luxurious_lamp_description)
 
-## Features
+luxurious_lamp_price = 52.15
+print(luxurious_lamp_price)
 
-- Stores a catalog of furniture items with descriptions and prices
-- Calculates totals and sales tax for customer purchases
-- Prints itemized receipts
+sales_tax = .088
 
-## Usage
+customer_one_total = 0
 
-1. Clone or download the repository.
-2. Run `receipts.py` using Python 3.
+customer_one_itemization =  ""
 
-```bash
-python receipts.py
-```
+customer_one_total += lovely_loveseat_price
 
-## Project Context
+customer_one_itemization += lovely_loveseat_description
 
-Created as part of Codecademy’s Introduction to Computer Science course.
-```
-Copy and paste this into a file named `README.md` in your repository.
+customer_one_total += luxurious_lamp_price
+
+customer_one_tax = customer_one_total * sales_tax
+customer_one_total += customer_one_tax
+
+print("Customer One Items:")
+
+print(customer_one_itemization)
+
+print("Customer_One_Total")
+
+print(customer_one_total)
